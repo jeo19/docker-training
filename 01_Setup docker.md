@@ -36,3 +36,28 @@ $ sudo yum install docker-io
 - Run when booting the OS
 &nbsp;$ sudo chkconfig docker on
 </pre>
+
+> Using the latest binary
+
+<pre>- When already installed
+
+&nbsp;$ sudo service docker stop
+&nbsp;$ sudo wget https://get.docker.com/builds/Linux/x86_64/docker-latest \
+    -O $(type -P docker)
+&nbsp;$ sudo service docker start
+
+- If you install to new version
+  
+&nbsp;$ wget https://get.docker.com/builds/Linux/x86_64/docker-latest
+&nbsp;$ chmod +x docker-latest
+&nbsp;$ sudo mv docker-latest /usr/local/bin/docker
+&nbsp;$ sudo /usr/local/bin/docker -d 
+</pre>
+
+# Setup on Windows
+
+> Windows 7 or 10 Home (under)
+
+<pre>
+Note: If your system does not meet the requirements to run Docker for Windows, you can install Docker Toolbox, which uses Oracle Virtual Box instead of Hyper-V.
+</pre>
