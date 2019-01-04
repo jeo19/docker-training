@@ -1,4 +1,4 @@
-# Lifecycle of the docker
+# Lifecycle of the docker container
 
 > create container
 
@@ -78,4 +78,18 @@
 
 <pre>
 - docker diff
+</pre>
+
+# File Copy
+
+> Copies the file in container to the host
+
+<pre>
+- docker cp [image or ID]:[File path in image] [Host path]
+</pre>
+
+> Copies the file in host to the container
+
+<pre>
+-docker cp [Host path] [image or ID]:[File path in image] 
 </pre>
